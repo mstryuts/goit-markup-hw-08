@@ -1,0 +1,72 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    background-color: $white-color;
+    list-style: none;
+
+    &__item{
+        flex-basis: calc((100% - 90px) / 3);
+            margin-left: 30px;
+            margin-top: 30px;
+    }
+
+    &__link{
+    text-decoration: none;
+    transition: box-shadow $cubic-bezier;
+        &:hover,
+        &:focus{
+            display: block;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                    0px 4px 4px rgba(0, 0, 0, 0.06),
+                    1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+        &:hover .cards__overlay,
+        &:focus .cards_overlay{
+            transform: translateY(0);
+        }
+    }
+    
+    &__thumb{
+        position: relative;
+        overflow: hidden;
+    }
+    &__overlay{
+        position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $overlay-color;
+            transform: translatey(100%);
+            transition: transform $cubic-bezier;
+            padding: 63px 24px;
+            font-size: 18px;
+            line-height: 1.55;
+            color: $white-color;
+            
+    }
+    &__box{
+        padding: 20px 24px;
+            border-left: 1px solid #EEEEEE;
+            border-right: 1px solid #EEEEEE;
+            border-bottom: 1px solid #EEEEEE;
+    }
+    &__title{
+        color: $sec-color;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 2;
+            letter-spacing: 0.06em;
+            margin-bottom: 4px;
+    }
+    &__description{
+        font-size: 16px;
+            line-height: 1.87;
+            color: $main-color;
+    }
+  
+
+}
+

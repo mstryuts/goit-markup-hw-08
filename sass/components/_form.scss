@@ -1,0 +1,93 @@
+.form-title {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    margin-bottom: 12px;
+    color: $sec-color;
+}
+
+.form__label {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $main-color;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.form__wrapper {
+    position: relative;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 12px 11px;
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    
+    &:focus{
+        border-color: $accent-color;
+    }
+    &:focus+.form__icon {
+        fill: $accent-color;
+    }
+
+}
+
+
+.form__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+}
+
+.comment__area {
+    resize: none;
+    height: 120px;
+    margin-top: 4px;
+    padding: 12px 16px;
+    &::placeholder{
+        font-size: 12px;
+            line-height: 1.16;
+            letter-spacing: 0.01em;
+            color: rgba(117, 117, 117, 0.5);
+    }
+}
+
+.check {
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+
+    &__policy{
+    margin-left: 37px;
+    }
+    &__icon{
+    width: 16px;
+        height: 15px;
+        top: 0;
+        left: 15px;
+        display: block;
+        position: absolute;
+        background-image: url(../images/border.svg);
+        transition: background-image $cubic-bezier;
+    }
+    &__link{
+        color: $accent-color;
+    }
+
+}
+
+.check__form:checked+.check__icon {
+    background-image: url(../images/checked.svg);
+}

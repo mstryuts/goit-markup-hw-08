@@ -1,0 +1,49 @@
+.peculiarities-list:not(:last-child) {
+    // margin-right: 30px;
+}
+.recital {
+    padding-bottom: 0;
+}
+
+.peculiarities {
+    
+    justify-content: center;
+    padding-left: 0;
+
+    &__wrapper{
+        width: 450px;
+            height: 120px;
+            background-color: $bc-team;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+    &__title{
+    color: $sec-color;
+        font-weight: 700;
+        line-height: 1.14;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: inherit;
+        margin-bottom: 10px;
+        
+    }
+   &__text{
+    line-height: 1.71;
+        
+   }
+   &__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+}
+
+
+
+
+
+
+.peculiarities {
+    list-style: none;
+}
