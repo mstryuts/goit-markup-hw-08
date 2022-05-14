@@ -2,16 +2,11 @@
 .loyals {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    text-align: center;
-
-    &__item:not(:last-child){
-    margin-right: 30px;
-    }
+    
+    
 
     &__link{
-        width: 170px;
+        max-width: 210px;
             height: 92px;
             border-radius: 4px;
             border: 1px solid #AFB1B8;
@@ -31,5 +26,4 @@
         fill: currentColor;
     }
 }
-
 

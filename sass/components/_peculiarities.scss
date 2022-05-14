@@ -11,7 +11,7 @@
     padding-left: 0;
 
     &__wrapper{
-        width: 450px;
+        max-width: 450px;
             height: 120px;
             background-color: $bc-team;
             border-radius: 4px;
@@ -38,12 +38,6 @@
     margin-bottom: 30px;
 }
 }
-
-
-
-
-
-
 .peculiarities {
     list-style: none;
 }
