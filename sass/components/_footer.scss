@@ -1,21 +1,52 @@
 .underground {
     padding: 60px 0;
     background-color: $hero-bgc;
+    
 }
 
 .main-footer {
-    // display: flex;
-    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width:768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: baseline;
+        }
+                @media screen and (min-width:1200px) {
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+                    align-items: baseline;
+                    width: 1200px;
+                }
 }
 
 .main-adress {
-    margin-right: 70px;
-}
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin-bottom: 60px;
+    @media screen and (min-width:768px) and (max-width: 1199px) {
+            width: 50%;
+        }
+                @media screen and (min-width:1200px) {
+                    align-items: flex-start;
+                    margin-bottom: unset;
+                }
+    
+} 
 
 
 .info {
     line-height: 1.71;
     margin-top: 20px;
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media screen and (min-width: 1200px) {
+                    align-items: flex-start;
+                }
 
     &__item:not(:first-child) {
             margin-top: 9px;}
@@ -50,29 +81,64 @@
 }
 
 .social {
-    margin-right: 93px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom: 60px;
+    @media screen and (min-width:768px) and (max-width: 1199px) {
+            width: 50%;
+        }
+        @media screen and (min-width: 1200px) {
+            width: unset;
+            align-items: flex-start;}
+                        @media screen and(min-width:1200px) {
+                            margin-bottom: 0;
+                        }
 }
-
+.mailing-footer{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        @media screen and (min-width: 1200px) {
+                width: unset;
+                align-items: flex-start;
+}}
 
 .mailbox{
-    // display: flex;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width:1200px) {
+                flex-direction: row;
+            }
+        
 
     &__footer{
-        max-width: 450px;
+        width: 450px;
+        padding-left: 16px;
             height: 50px;
             border: 1px solid $form-footer-border;
             box-sizing: border-box;
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
             border-radius: 4px;
             background-color: $hero-bgc;
-            margin-right: 12px;
-            padding-left: 16px;
+            margin-bottom: 20px;
             color: $footer-contact;
+            @media screen and (min-width:1200px) {
+                    margin-bottom: 0;
+                }
+            
             &:focus{
                 
                         outline: none;
                         border: 1px solid $accent-color;
             }
+            @media screen and (min-width: 1200px) {
+                 width: 358px;
+                 margin-right: 12px;
+                        }
+                
     }
 }
 

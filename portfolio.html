@@ -24,25 +24,51 @@
     <!-- шапка сайта -->
 
     <header class="header">
-      <div class="container">
-        <nav class="header-wrapper">
-          <a href="index.html" class="logo-header logo"
-            >Web<span class="logo__header">Studio</span></a
+      <div class="container header-container">
+        <a href="index.html" class="logo-header logo"
+          >Web<span class="logo__header">Studio</span></a
+        >
+        <button
+          type="button"
+          class="menu__button is-open"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
           >
-          <ul class="nav">
-            <li class="nav__item">
-              <a href="index.html" class="nav__link">Студия</a>
-            </li>
-            <li class="nav__item">
-              <a href="portfolio.html" class="nav__link current">Портфолио</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Контакты</a>
-            </li>
-          </ul>
+            <use
+              class="icon-menu"
+              href="./images/symbol-defs.svg#icon-close"
+            ></use>
+            <use
+              class="icon-close"
+              href="./images/symbol-defs.svg#icon-menu"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu" data-menu>
+          <nav class="site-nav">
+            <ul class="nav">
+              <li class="nav__item">
+                <a href="index.html" class="nav__link">Студия</a>
+              </li>
+              <li class="nav__item">
+                <a href="portfolio.html" class="nav__link current">Портфолио</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
           <ul class="auth">
             <li class="auth__item">
-              <a href="mailto:info@devstudio.com" class="auth__link">
+              <a
+                href="mailto:info@devstudio.com"
+                class="auth__link auth__link--mail"
+              >
                 <svg class="auth__icon" width="16" height="12">
                   <use href="./images/symbol-defs.svg#icon-mail"></use>
                 </svg>
@@ -50,7 +76,7 @@
               >
             </li>
             <li class="auth__item">
-              <a href="tel:+380961111111" class="auth__link">
+              <a href="tel:+380961111111" class="auth__link auth__link--phone">
                 <svg class="auth__icon" width="10" height="16">
                   <use href="./images/symbol-defs.svg#icon-phone"></use>
                 </svg>
@@ -58,7 +84,21 @@
               >
             </li>
           </ul>
-        </nav>
+          <ul class="menu-social">
+            <li class="menu-social__item">
+              <a href="#" class="menu-social__link">Instagram</a>
+            </li>
+            <li class="menu-social__item">
+              <a href="#" class="menu-social__link">Twitter</a>
+            </li>
+            <li class="menu-social__item">
+              <a href="#" class="menu-social__link">Facebook</a>
+            </li>
+            <li class="menu-social__item">
+              <a href="#" class="menu-social__link">Linkedin</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -381,5 +421,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

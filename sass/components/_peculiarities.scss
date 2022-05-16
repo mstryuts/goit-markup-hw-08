@@ -1,43 +1,77 @@
-.peculiarities-list:not(:last-child) {
-    // margin-right: 30px;
-}
+
+
 .recital {
     padding-bottom: 0;
 }
 
 .peculiarities {
-    
+    display: flex;
     justify-content: center;
-    padding-left: 0;
+    flex-wrap: wrap;
+    ;
 
-    &__wrapper{
-        max-width: 450px;
-            height: 120px;
-            background-color: $bc-team;
-            border-radius: 4px;
-            margin-bottom: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    &__wrapper {
+        width: 100%;
+        height: 120px;
+        background-color: $bc-team;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    &__title{
-    color: $sec-color;
+    &__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    &__item {
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 30px)/2);
+            text-align: left;
+            margin-bottom: 30px;
+    
+            &:nth-child(odd) {
+                margin-right: 30px;
+            }    
+            &:nth-child(n + 3) {
+                margin-bottom: 0;
+            }
+          }
+         @media screen and (min-width: 1200px) {
+             flex-wrap: nowrap;
+             flex-basis: calc((100% - 90px)/4);
+         }
+         
+        }
+        @media screen and (min-width: 1200px) {
+            .peculiarities__item {
+                margin-bottom: 0;
+            }
+    
+            &__item:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+
+    &__title {
+        text-align: center;
+        color: $sec-color;
         font-weight: 700;
         line-height: 1.14;
-        text-align: center;
         text-transform: uppercase;
         font-size: inherit;
         margin-bottom: 10px;
-        
+        margin-top: 0;
+        @media screen and (min-width: 768px) {
+                text-align: left;
+            }
     }
-   &__text{
-    line-height: 1.71;
-        
-   }
-   &__item:not(:last-child) {
-    margin-bottom: 30px;
+
+    &__text {
+        line-height: 1.71;
+        margin-top: 0;
+    }
 }
-}
+
 .peculiarities {
     list-style: none;
 }
