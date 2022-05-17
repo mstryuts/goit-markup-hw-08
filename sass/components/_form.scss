@@ -68,22 +68,34 @@
     margin-top: 20px;
     position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     &__policy{
-    margin-left: 37px;
+    margin-left: 20px;
+    font-size: 12px;
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+        margin-left: 37px;
+    }
     }
     &__icon{
     width: 16px;
         height: 15px;
         top: 0;
-        left: 15px;
+        // left: 15px;
+        left:0;
         display: block;
         position: absolute;
         background-image: url(../images/border.svg);
         transition: background-image $cubic-bezier;
+        @media screen and (min-width:1200px) {
+            left: 15px;
+            }
     }
     &__link{
         color: $accent-color;
+        
     }
 
 }
