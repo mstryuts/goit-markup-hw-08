@@ -224,6 +224,7 @@
 }
 .menu-social{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 64px;
     &__item:not(:last-child) {
             padding-right: 10px;

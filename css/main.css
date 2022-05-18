@@ -881,6 +881,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 64px;
 }
 .menu-social__item:not(:last-child) {
@@ -1332,6 +1334,11 @@ body {
   color: #757575;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .tablet-crutch {
+    margin-bottom: 36px;
+  }
+}
 .backdrop {
   overflow-y: scroll;
   z-index: 999;
