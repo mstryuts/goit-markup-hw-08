@@ -1076,6 +1076,11 @@ body {
 .recital {
   padding-bottom: 0;
 }
+@media screen and (max-width: 1199px) {
+  .recital {
+    padding-bottom: 60px;
+  }
+}
 
 .peculiarities {
   display: -webkit-box;
