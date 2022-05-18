@@ -22,10 +22,10 @@
     position: absolute;
     background-color: $white-color;
     width: 320px;
-    min-height: 581px;
+    height: 100%;
     @media screen and (min-width: 480px) {
             width: 450px;
-            min-height: 609px;
+            max-height: 609px;
         }
     
         @media screen and (min-width: 1200px) {

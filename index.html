@@ -177,22 +177,28 @@
           <ul class="examples">
             <li>
               <div class="examples__wrapper">
-                <img
-                  src="./images/dev1.jpg"
-                  width="370"
-                  alt="Программист пишет код"
-                />
+                <picture class="examples__img">
+                  <source
+                    srcset="./images/dev/d1.jpg 1x, ./images/dev/d1@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img src="./images/dev/d1.jpg" alt="кодер кодит" />
+                </picture>
                 <p class="examples__title">Десктопные приложения</p>
               </div>
             </li>
 
             <li>
               <div class="examples__wrapper">
-                <img
-                  src="./images/dev2.jpg"
-                  width="370"
-                  alt="создание интерфейса"
-                />
+                <picture class="examples__img">
+                  <source
+                    srcset="./images/dev/d2.jpg 1x, ./images/dev/d2@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img src="./images/dev/d2.jpg" alt="дизайн интерфейса" />
+                </picture>
 
                 <p class="examples__title">Мобильные приложения</p>
               </div>
@@ -200,11 +206,14 @@
 
             <li>
               <div class="examples__wrapper">
-                <img
-                  src="./images/dev3.jpg"
-                  width="370"
-                  alt="работа с цветом"
-                />
+                <picture class="examples__img">
+                  <source
+                    srcset="./images/dev/d3.jpg 1x, ./images/dev/d3@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img src="./images/dev/d3.jpg" alt="выбор цвета" />
+                </picture>
                 <p class="examples__title">Дизайнерские решения</p>
               </div>
             </li>
@@ -216,7 +225,34 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="crew">
             <li class="crew__item">
-              <img src="./images/t1.jpg" width="270" alt="фото игорь" />
+              <!-- <img src="./images/t1.jpg" width="270" alt="фото игорь" /> -->
+              <picture class="crew__photo">
+                <source
+                  srcset="
+                    ./images/team/desc-t1.jpg    1x,
+                    ./images/team/desc-t1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet-t1.jpg    1x,
+                    ./images/team/tablet-t1@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile-t1.jpg    1x,
+                    ./images/team/mobile-t1@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/mobile-t1.jpg" alt="Игорь Демьяненко" />
+              </picture>
               <h3 class="crew__title">Игорь Демьяненко</h3>
               <p class="crew__position">Product Designer</p>
               <div class="socials">
@@ -243,12 +279,39 @@
               </div>
             </li>
             <li class="crew__item">
-              <img
+              <!-- <img
                 class="example-photo"
                 src="./images/t2.jpg"
                 width="270"
                 alt="фото ольга"
-              />
+              /> -->
+              <picture class="crew__photo">
+                <source
+                  srcset="
+                    ./images/team/desc-t2.jpg    1x,
+                    ./images/team/desc-t2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet-t2.jpg    1x,
+                    ./images/team/tablet-t2@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile-t2.jpg    1x,
+                    ./images/team/mobile-t2@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/mobile-t2.jpg" alt="Ольга Репина" />
+              </picture>
               <h3 class="crew__title">Ольга Репина</h3>
               <p class="crew__position">Frontend Developer</p>
               <div class="socials">
@@ -275,12 +338,39 @@
               </div>
             </li>
             <li class="crew__item">
-              <img
+              <!-- <img
                 class="example-photo"
                 src="./images/t3.jpg"
                 width="270"
                 alt="фото николай"
-              />
+              /> -->
+              <picture class="crew__photo">
+                <source
+                  srcset="
+                    ./images/team/desc-t3.jpg    1x,
+                    ./images/team/desc-t3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet-t3.jpg    1x,
+                    ./images/team/tablet-t3@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile-t3.jpg    1x,
+                    ./images/team/mobile-t3@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/mobile-t3.jpg" alt="Николай Тарасов" />
+              </picture>
               <h3 class="crew__title">Николай Тарасов</h3>
               <p class="crew__position">Marketing</p>
               <div class="socials">
@@ -307,12 +397,39 @@
               </div>
             </li>
             <li class="crew__item">
-              <img
+              <!-- <img
                 class="example-photo"
                 src="./images/t4.jpg"
                 width="270"
                 alt="фото михаил"
-              />
+              /> -->
+              <picture class="crew__photo">
+                <source
+                  srcset="
+                    ./images/team/desc-t4.jpg    1x,
+                    ./images/team/desc-t4@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet-t4.jpg    1x,
+                    ./images/team/tablet-t4@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile-t4.jpg    1x,
+                    ./images/team/mobile-t4@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/team/mobile-t4.jpg" alt="Михаил Ермаков" />
+              </picture>
               <h3 class="crew__title">Михаил Ермаков</h3>
               <p class="crew__position">UI Designer</p>
               <div class="socials">
@@ -464,6 +581,7 @@
         </div>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__close" type="button" data-modal-close>
