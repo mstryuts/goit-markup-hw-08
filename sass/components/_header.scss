@@ -129,16 +129,21 @@
 
 .icon-close {
     display: none;
+    
 }
 
 .is-open .icon-close {
     display: block;
+    
 }
 
 .is-open .icon-menu {
     display: none;
+    
 }
-
+.hidden.is-open {
+    overflow: hidden;
+}
 @media screen and (max-width: 767px) {
     .logo-header {
         padding-top: 16px;
