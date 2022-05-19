@@ -11,7 +11,6 @@
     menuBtnRef.setAttribute("aria-expanded", !expanded);
 
     mobileMenuRef.classList.toggle("is-open");
-    scrollHiddenRef.classList.toggle("open");
+    scrollHiddenRef.classList.toggle("is-open");
   });
 })();
-
