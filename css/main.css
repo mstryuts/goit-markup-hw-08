@@ -577,7 +577,6 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
   margin: 0;
-  overflow: hidden;
 }
 
 .container {
@@ -776,7 +775,7 @@ body {
   display: none;
 }
 
-.hidden.is-open {
+.hidden .open {
   overflow: hidden;
 }
 
